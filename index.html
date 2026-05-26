@@ -22,20 +22,59 @@ src="https://www.facebook.com/tr?id=537745502413226&ev=PageView&noscript=1"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANNA OFFICIAL</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Mobile Specific Responsive Styling -->
+    <style>
+        /* Mobile Screens (480px se choti screens ke liye) */
+        @media screen and (max-width: 480px) {
+            .landing-page {
+                padding: 10px;
+            }
+            .content {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 10px !important;
+            }
+            .brand-title {
+                font-size: 24px !important; /* Choti screen par title fit karne ke liye */
+                letter-spacing: 1px !important;
+            }
+            .crown-icon {
+                font-size: 18px !important;
+            }
+            .subscriber-counter p {
+                font-size: 20px !important;
+                margin: 12px !important;
+            }
+            .btn-container {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+            .join-btn {
+                font-size: 13px !important; /* Text overlap na ho isliye font thoda chota */
+                white-space: normal !important; /* Doosre button ka text wrapped rahega */
+                height: auto !important;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="landing-page">
-        <div class="content">
-            <img style="height: 80px; border-radius: 50%;" src="image.png" alt="">
-            <div style="display:flex;justify-content:center;align-items:center;gap:14px;margin:10px 0;">
-                <span style="font-size:24px;">👑</span>
-                <b style="font-weight:800; font-size:32px; color:yellow; letter-spacing:2px; padding:0 8px; white-space: nowrap;">Anna Official</b>
-                <span style="font-size:24px;">👑</span>
+    <div class="landing-page" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box;">
+        <div class="content" style="max-width: 450px; width: 100%; text-align: center; padding: 20px; box-sizing: border-box;">
+            
+            <img style="height: 80px; width: 80px; border-radius: 50%; object-fit: cover;" src="pushkar.jpg" alt="Anna Official">
+            
+            <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin:10px 0; width: 100%;">
+                <span class="crown-icon" style="font-size:24px;">👑</span>
+                <b class="brand-title" style="font-weight:800; font-size:32px; color:yellow; letter-spacing:2px; padding:0 8px; white-space: nowrap;">Anna Official</b>
+                <span class="crown-icon" style="font-size:24px;">👑</span>
             </div>
+            
             <div class="subscriber-counter">
-                <p id="subscriber-count" style="margin:18px;font-size:25px;font-weight:bold;">47 477 Subscribers</p>
+                <p id="subscriber-count" style="margin:18px; font-size:25px; font-weight:bold;">47 477 Subscribers</p>
             </div>
-            <div class="timer">
+            
+            <div class="timer" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px;">
                 <div class="time-box">
                     <div class="circle">
                         <span id="seconds1">20</span>
@@ -49,26 +88,31 @@ src="https://www.facebook.com/tr?id=537745502413226&ev=PageView&noscript=1"
                     </div>
                 </div>
             </div>
-            <ul>
-                <li>✅ 98% ACCURATE</li>
-                <li>✅ 40/39 MATCHES PASS</li>
-                <li>✅ 7 YEAR+ EXPERIENCE</li>
+            
+            <ul style="list-style: none; padding: 0; margin-bottom: 25px; text-align: left; display: inline-block;">
+                <li style="margin-bottom: 8px; font-weight: bold;">✅ 98% ACCURATE</li>
+                <li style="margin-bottom: 8px; font-weight: bold;">✅ 40/39 MATCHES PASS</li>
+                <li style="margin-bottom: 8px; font-weight: bold;">✅ 7 YEAR+ EXPERIENCE</li>
             </ul>
-<div style="padding: 4px; border: 1px solid #00bfff; background-color: black; border-radius: 50px; margin-bottom: 15px; max-width: 430px; box-sizing: border-box;">
-    <a href="https://t.me/+ZPU_zCHwgkA0NGU8" class="join-btn" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 14px 0; background-color: #00aced; color: #ffffff; border-radius: 50px; font-weight: bold; font-family: sans-serif; font-size: 15px; gap: 10px; box-sizing: border-box;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M22.65 3.046a1.183 1.183 0 0 0-1.175-.2L2.585 10.178c-.592.235-.98.63-1.07 1.154-.09.523.17 1.02.695 1.302l4.028 1.963 1.567 4.844c.173.527.526.65.8.664.274.014.644-.1.958-.396l2.883-2.751 4.75 3.508c.309.228.623.343.913.343.366 0 .698-.137.89-.377.269-.332.344-.823.211-1.36L22.76 4.15a1.183 1.183 0 0 0-.11-1.104zm-6.775 11.46-3.643-2.68-3.41 3.255.704-4.118 8.099-5.853-6.794 4.91-4.568-2.204 14.52-5.783-5.518 13.473z"/>
-        </svg>
-        JOIN NOW FOR FREE
-    </a>
-</div>
 
-<div style="padding: 4px; border: 1px solid #00bfff; background-color: black; border-radius: 50px; max-width: 430px; box-sizing: border-box;">
-    <a href="https://t.me/+ZPU_zCHwgkA0NGU8" class="join-btn" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 14px 10px; background-color: #00aced; color: #ffffff; border-radius: 50px; font-weight: bold; font-family: sans-serif; font-size: 14px; text-align: center; box-sizing: border-box; white-space: nowrap;">
-        OLD CHANNEL BLOCK, NEW CHANNEL JOIN
-    </a>
-</div>
-            <p style="text-align:center;">
+            <!-- Button 1 -->
+            <div class="btn-container" style="padding: 4px; border: 1px solid #00bfff; background-color: black; border-radius: 50px; margin-bottom: 15px; max-width: 430px; margin-left: auto; margin-right: auto; box-sizing: border-box;">
+                <a href="https://t.me/+ZPU_zCHwgkA0NGU8" class="join-btn" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 14px 0; background-color: #00aced; color: #ffffff; border-radius: 50px; font-weight: bold; font-family: sans-serif; font-size: 15px; gap: 10px; box-sizing: border-box;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M22.65 3.046a1.183 1.183 0 0 0-1.175-.2L2.585 10.178c-.592.235-.98.63-1.07 1.154-.09.523.17 1.02.695 1.302l4.028 1.963 1.567 4.844c.173.527.526.65.8.664.274.014.644-.1.958-.396l2.883-2.751 4.75 3.508c.309.228.623.343.913.343.366 0 .698-.137.89-.377.269-.332.344-.823.211-1.36L22.76 4.15a1.183 1.183 0 0 0-.11-1.104zm-6.775 11.46-3.643-2.68-3.41 3.255.704-4.118 8.099-5.853-6.794 4.91-4.568-2.204 14.52-5.783-5.518 13.473z"/>
+                    </svg>
+                    JOIN NOW FOR FREE
+                </a>
+            </div>
+
+            <!-- Button 2 -->
+            <div class="btn-container" style="padding: 4px; border: 1px solid #00bfff; background-color: black; border-radius: 50px; max-width: 430px; margin-left: auto; margin-right: auto; margin-bottom: 20px; box-sizing: border-box;">
+                <a href="https://t.me/+ZPU_zCHwgkA0NGU8" class="join-btn" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 14px 10px; background-color: #00aced; color: #ffffff; border-radius: 50px; font-weight: bold; font-family: sans-serif; font-size: 14px; text-align: center; box-sizing: border-box;">
+                    OLD CHANNEL BLOCK, NEW CHANNEL JOIN
+                </a>
+            </div>
+
+            <p style="text-align:center; margin-top: 20px;">
                 <span style="color:#ffffff;"><strong>This Channel Advertise By <a target="_blank" href="https://wa.me/+9532473116"><span style="color:#ffff00;">siviagency</span></a></strong></span>
             </p>
         </div>
